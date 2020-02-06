@@ -1,0 +1,30 @@
+---
+layout:     post
+title:      "Linux-CentOS"
+subtitle:   " \"创建新用户\""
+date:       2020-02-06 13：43
+author:     "Jack-C"
+header-img: "img/post-bg-DL.jpg"
+catalog: true
+tags:
+    - Linux
+    - CentOS
+---
+
+## 1、创建新用户
+
+1. useradd sqc
+2. passwd 123456
+3. groupadd gp1
+4. usermod -G gp1 sqc
+
+## 2、加入sudoers
+
+1. vi /etc/sudoers
+2. %gp1            ALL=(ALL)                ALL
+
+## 3、分配工作空间
+
+1. mkdir workplace 
+2. chmod -R 764 workplace
+3. chown gp1:sqc workplace
