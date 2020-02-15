@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Linux-CentOS"
+title:      "CentOS7"
 subtitle:   " \"maven踩坑\""
 date:       2020-02-15 13：43
 author:     "Jack-C"
@@ -10,6 +10,7 @@ tags:
     - Linux
     - CentOS
     - Maven
+    - Bug
 ---
 
 ## 踩坑背景
@@ -39,5 +40,13 @@ tags:
   .
   .
 </settings>
+```
+
+## 注意事项
+
+防火墙也应关闭！！
+
+```shell
+systemctl stop firewalld.service
 ```
 

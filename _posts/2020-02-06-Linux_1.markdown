@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Linux-CentOS"
+title:      "CentOS7"
 subtitle:   " \"创建新用户\""
 date:       2020-02-06 13：43
 author:     "Jack-C"
@@ -9,6 +9,7 @@ catalog: true
 tags:
     - Linux
     - CentOS
+    - 学习
 ---
 
 ## 1、创建新用户
