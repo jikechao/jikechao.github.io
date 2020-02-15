@@ -1,0 +1,43 @@
+---
+layout:     post
+title:      "Linux-CentOS"
+subtitle:   " \"maven踩坑\""
+date:       2020-02-15 13：43
+author:     "Jack-C"
+header-img: "img/post-bg-DL.jpg"
+catalog: true
+tags:
+    - Linux
+    - CentOS
+    - Maven
+---
+
+## 踩坑背景
+
+安装好maven后，maven每次都会停在download的页面（已经配置国内mirror）
+
+## 解决方案
+
+谁能想到，服务器连接的是他娘的内网，只在/etc/profile下设置http代理根本不行，maven中同样需要在settings.xml文件中添加代理，代码如下：
+
+```xml
+<settings>
+  .
+  .
+  <proxies>
+   <proxy>
+      <id>example-proxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>proxy.example.com</host>
+      <port>8080</port>
+      <!--username>proxyuser</username>
+      <password>somepassword</password>
+      <nonProxyHosts>www.google.com|*.example.com</nonProxyHosts-->
+    </proxy>
+  </proxies>
+  .
+  .
+</settings>
+```
+
