@@ -1,0 +1,31 @@
+---
+layout:     post
+title:      "Python基础配置问题"
+subtitle:   " \"修改pip install 默认安装路径\""
+date:       2020-03-06 19：43
+author:     "Jack-C"
+header-img: "img/post-bg-DL.jpg"
+catalog: true
+tags:
+    - Python
+    - pip
+    - 学习
+---
+
+## 1、痛点分析
+
+1. 由于pip安装的各种包默认会装在~/.local文件夹下，服务器一般根目录空间小，
+2.  使用pip安装时，临时更改安装路径--prefix=/path/……  贼烦，每次都要修改
+
+## 2、更改pip默认路径
+
+1. ```
+   python ``-``m site  
+   # 输出结果中 
+   # USER_BASE ：是用户自定义的启用Python脚本
+   # USER_SITE ：依赖安装包的基础路径（修改这个就OK)
+   ```
+
+2.  python ``-``m site ``-``help    # 输出结果中会有一个/path/../site.py文件
+
+3.  **进入到这个site.py中，修改对应的USER_SITE的值就OK**
