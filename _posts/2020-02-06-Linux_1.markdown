@@ -9,7 +9,7 @@ catalog: true
 tags:
     - Linux
     - CentOS
-    - 学习
+    - 运维
 ---
 
 ## 1、创建新用户

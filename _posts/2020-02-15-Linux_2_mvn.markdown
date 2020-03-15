@@ -11,6 +11,7 @@ tags:
     - CentOS
     - Maven
     - Bug
+    - 运维
 ---
 
 ## 踩坑背景
@@ -49,4 +50,22 @@ tags:
 ```shell
 systemctl stop firewalld.service
 ```
+
+
+
+## 类比yum
+
+#### 情景再现
+
+yum命令，每次都会出现连接mirror超时
+
+#### 解决方案
+
+1. 进入 **/etc/yum.conf** 文件
+2. 添加代理如下（代理和/etc/profile代理一致）
+3. proxy=http://10.10.44.251:6588     #具体代理见、etc/profile文件
+
+
+
+
 
