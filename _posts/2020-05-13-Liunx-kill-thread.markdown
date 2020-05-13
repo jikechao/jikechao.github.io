@@ -2,7 +2,7 @@
 layout:     post
 title:      "Linux运维"
 subtitle:   " \"已删除文件继续占用空间\""
-date:       2020年5月13日 19：43
+date:       2020-05-14 01：42
 author:     "Jack-C"
 header-img: "img/post-bg-DL.jpg"
 catalog: true
@@ -29,6 +29,7 @@ tags:
     # 找到对应的进行，kill 该进行
     kill -9 PID
     
+    ```
    ```
 
 2.  若找不到对应的进程，考虑 kill 当前用户所有的进程

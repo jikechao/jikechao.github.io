@@ -2,7 +2,7 @@
 layout:     post
 title:      "git 配置"
 subtitle:   " \"配置git环境，介绍常用操作\""
-date:       2020年5月13日 20点15分
+date:       2020-05-13 20：15
 author:     "Jack-C"
 header-img: "img/post-bg-DL.jpg"
 catalog: true
