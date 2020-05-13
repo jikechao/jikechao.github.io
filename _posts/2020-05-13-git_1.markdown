@@ -1,0 +1,72 @@
+---
+layout:     post
+title:      "git 配置"
+subtitle:   " \"配置git环境，介绍常用操作\""
+date:       2020年5月13日 20点15分
+author:     "Jack-C"
+header-img: "img/post-bg-DL.jpg"
+catalog: true
+tags:
+    - Git配置
+    - GitHub介绍
+---
+
+## 1、配置git环境
+
+1. 在本地PC安装git 客户端软件
+
+2. 设置用户名和邮箱
+
+   ```bash
+   git config --global user.name "Your Name"
+   git config --global user.email "email@example.com"
+   ```
+
+3. 将本地git 与远程仓库github 关联
+
+   ```bash
+   # 在本地PC生成SSH Key并将其添加到Github服务器上
+   ssh-keygen -t rsa -C “qingchaoshen@outlook.com”   # 跳出问题，均直接回车，使用默认
+   cat ~/.ssh/id_rsa.pub  # 默认生成公钥的文件位置
+   # 将上述内容，复制到github中setting--SSH Key中
+   ```
+
+## 2、git 常用操作
+
+```bash
+git clone git@github.com:jikechao/jikechao.github.io.git   # clone远程仓库到本地
+
+#………………………在本地修改文件，修改完push到远程仓库………………………………………………………………… 
+git add ./
+git commit -m “更新的信息”
+git push origin master:master   # origin：指向远程对应的repository， master：master ->本地分知：远程分支
+
+# ……………………………创建分支dev,修改，并将本分支push到远程dev分支………………………
+git branch # 查看所有分支
+git branch -b dev #创建dev分支，并切换到该分支
+git add ./
+git commit -m "crate branch dev , push to remote branch-dev"
+git push origin dev  # 将本地dev, push到远程dev(默认)
+
+
+
+
+
+```
+
+## 3、注意事项
+
+1.  git push 如何ignore 一些无用/机密文件
+
+   答：在本地创建".gitignore"文件， 将需要ignore的文件**路径**写入文件
+
+
+## 4、拓展知识
+
+* SSH是什么？
+
+  答：**Secure Shell** (**SSH**) 是一个允许两台电脑之间通过安全的连接进行数据交换的**网络协议**。通过**加密**保证了数据的保密性和完整性。SSH采用**公钥**加密技术来**验证远程主机**，以及(必要时)允许远程主机验证用户。
+
+* SSH key 又是什么？
+
+  答：是**密钥对。** 在git客户端声称**密钥对**，在github服务器上配置**公钥**
