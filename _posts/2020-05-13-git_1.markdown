@@ -31,7 +31,7 @@ tags:
    # 将上述内容，复制到github中setting--SSH Key中
    ```
 
-## 2、git 常用操作
+## 2、git 操作（clone 别人的project，并修改）
 
 ```bash
 git clone git@github.com:jikechao/jikechao.github.io.git   # clone远程仓库到本地
@@ -54,11 +54,9 @@ git push origin dev  # 将本地dev, push到远程dev(默认)
 
 ```
 
-## 3、注意事项
+## 3、git操作（自己project ，托管到github）
 
-1.  git push 如何ignore 一些无用/机密文件
-
-   答：在本地创建".gitignore"文件， 将需要ignore的文件**路径**写入文件
+1.  
 
 
 ## 4、拓展知识
@@ -70,3 +68,7 @@ git push origin dev  # 将本地dev, push到远程dev(默认)
 * SSH key 又是什么？
 
   答：是**密钥对。** 在git客户端声称**密钥对**，在github服务器上配置**公钥**
+
+* git push 如何ignore 一些无用/机密文件
+
+   答：在本地创建".gitignore"文件， 将需要ignore的文件**路径**写入文件
