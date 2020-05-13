@@ -31,7 +31,7 @@ tags:
    # 将上述内容，复制到github中setting--SSH Key中
    ```
 
-## 2、git 操作（clone 别人的project，并修改）
+## 2、git 常用操作
 
 ```bash
 git clone git@github.com:jikechao/jikechao.github.io.git   # clone远程仓库到本地
@@ -43,44 +43,25 @@ git push origin master:master   # origin：指向远程对应的repository， ma
 
 # ……………………………创建分支dev,修改，并将本分支push到远程dev分支………………………
 git branch # 查看所有分支
-git checkout -b dev #创建dev分支，并切换到该分支
-git add -A # A= all :将所有文件的”增删改“操作都添加到暂存区
+git branch -b dev #创建dev分支，并切换到该分支
+git add ./
 git commit -m "crate branch dev , push to remote branch-dev"
 git push origin dev  # 将本地dev, push到远程dev(默认)
 
-#…………………………GitHub上操作：将dev分支发起pull request，合并到master分支
-1、普通用户发起pull request
-2、管理员审核，merge该分支到master，该分支变成Merged，继而该branch无用，可delete
+
+
+
+
 ```
 
-## 3、git操作（自己project ，托管到github）
+## 3、注意事项
 
-1. 在本地写好代码
+1.  git push 如何ignore 一些无用/机密文件
 
-2. 创建远程仓库demo
-
-3. 本地推送到远程仓库 
-
-   ```bash
-   git init
-   git add ./
-   git commit -m 'first commit'
-   git remote add origin git@github.com:jikechao/demo.git #将本地仓库与GitHub关联
-   git push -u origin master # u=update
-   ```
-
-## 4、获取GitHub上他人修改后的分支，更新本地分支
-
-git pull相当于是从远程获取最新版本并merge（合并）到本地     git pull = git fetch + git merge，git fetch更安全一些
-
-```bash
-git pull origin 远程分支：本地分支
-```
+   答：在本地创建".gitignore"文件， 将需要ignore的文件**路径**写入文件
 
 
-
-
-## 5、拓展知识
+## 4、拓展知识
 
 * SSH是什么？
 
@@ -89,11 +70,3 @@ git pull origin 远程分支：本地分支
 * SSH key 又是什么？
 
   答：是**密钥对。** 在git客户端声称**密钥对**，在github服务器上配置**公钥**
-
-* git push 如何ignore 一些无用/机密文件
-
-   答：在本地创建".gitignore"文件， 将需要ignore的文件**路径**写入文件
-
-*  获取远程**指定分支**
-
-  答：git -b v2.25 https://xxxx.git
