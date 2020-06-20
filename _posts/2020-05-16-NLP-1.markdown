@@ -1,0 +1,128 @@
+---
+layout:     post
+title:      "NLP 系列学习（一）"
+subtitle:   " \"NLP定义及其简介\""
+date:       2020-05-17 20：15
+author:     "Jack-C"
+header-img: "img/post-bg-DL.jpg"
+catalog: true
+tags:
+    - NLP
+---
+
+## 1、NLP定义
+
+1.  NLP= NLU+NLG
+   -  NLU: Natral Language Understanding 语音/文本 -->理解 
+   -  NLG: Natral Language Generate  意思---> 文本/语音
+2.  NLP的难点
+   -  ambiguity ：一词多义  -->解决方案：通过Context 处理，判读是apple 是吃的的意思的**概率**
+3. 直接通过查询语料库，‘一一对应’的机器学习系统的缺点：
+   - 慢
+   - 语法不对 
+   -  语义不对
+
+## 2、Statistical  Machine Translation
+
+### a、翻译的简单过程
+
+1. 流程图
+
+![1589702357091](assets/1589702357091.png)
+
+   中文句子（通过语料库进行分词）
+
+   --->Broken Chinese Word（一一对应翻译"）
+
+   ----->Broken English（通过Language Model， 统计单词每一种排列组合，可能是人话的**概率**）
+
+   -----> 最终结果
+
+2.  LM= 语言模型：language Model ，判断句子是人话的概率
+3.  Veterb算法：使用DP算法，同时考虑Step1、Step2，能够求出P(c|e)* P(e)的结果-->提速
+
+### b、Language Modle ：语言模型：
+
+- - 判断一句话英语句子e，符合英文语法的概率p(e)
+- 翻译模型：词典
+  - 给定一对<c, e>  判断中文单词c，翻译成英文e的语义相似度p(c|e)
+-  Decoding Algorithm
+  - 给定语言模型、翻译模型、c , 找出最优的使得p(e) *p(c|e)最大
+
+### c、语言模型
+
+- 语言模型如何计算句子是人话的概率
+
+  ![1589703662346](assets/1589703662346.png)
+
+  N-gram model :考虑到单词与前N个单词有关系，再往前就独立同分不（无关）了
+
+-  语言模型训练的目的：
+
+  答：计算每个单词的概率，每个单词出现时，另一个单词出现的概率……
+
+## 3、NLP使用场景
+
+- 问答系统
+
+- 情感分析（Sentiment Analysis ）
+
+  - 过程概要：
+
+    ![1589705953209](assets/1589705953209.png)
+
+  - 具体应用：
+    - 股票预测
+    - 舆情监控
+    - 产品评论
+    - 事件检测
+
+- 机器翻译系统（Machine Translation）
+
+- 自动摘要（text summarization）
+
+-  聊天机器人（chatbot）
+
+- 信息抽取（Information Extraction）
+
+## 4、NLP 关键技术
+
+### a、NLP技术四个维度
+
+- 声音Phonetics
+
+- 单词Morphology
+
+  - 分词
+  - 词性分析（Pos： part  of  speech)
+  - 命名实体识别（NER：Named Entity Recognition）
+
+- 句子Syntax
+
+  - 句法分析Parsing	
+
+    - SYK算法：一种DP算法
+
+  - 依存分析dependency parsing：分析单词之间的依赖关系
+
+    - Relation Extraction 关系抽取
+
+      ![1589707236637](assets/1589707236637.png)
+
+- 语义Semantic
+
+  - 机器学习
+
+
+
+
+
+
+
+
+
+
+
+
+
+

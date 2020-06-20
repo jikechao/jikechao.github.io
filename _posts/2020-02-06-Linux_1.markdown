@@ -15,7 +15,7 @@ tags:
 ## 1、创建新用户
 
 1. useradd sqc
-2. passwd 123456
+2. passwd sqc
 3. groupadd gp1
 4. usermod -G gp1 sqc
 

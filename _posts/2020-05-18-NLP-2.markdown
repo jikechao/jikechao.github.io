@@ -1,0 +1,57 @@
+---
+layout:     post
+title:      "NLP 系列学习（二）"
+subtitle:   " \"问答系统\""
+date:       2020-05-18 20：15
+author:     "Jack-C"
+header-img: "img/post-bg-DL.jpg"
+catalog: true
+tags:
+    - NLP
+---
+
+## 1、主方法求时间复杂度
+
+
+
+![1589778860227](../_post_assets/1589778860227.png)
+
+## 2、NP相关问题
+
+- P问题： 多项式复杂度，可以解决
+- NP问题
+- NP-hard问题 ：只能用近似求解，化成多项式复杂度求解
+- NP-complete问题：NP-hard的子集
+
+
+
+
+
+------
+
+## 3、搭建智能客服系统
+
+- 概要
+
+![1589780864288](../_post_assets/1589780864288.png)
+
+- 过程详解
+  1. 数据预处理：
+     - spell correction
+     - 将单词转化为他的原型（going/went-->go)
+     - stop-words过滤（停词: and、of等　无任何词意的词语）
+     - word filter 含有特殊的tag/单词中包含数字
+     - 同义词
+  2. 文本—＞向量
+     - 按照每个单词是否出现Boolen vector (0,0,1,0,1,1）
+     -  按照每个单词出现的次数（2，3，0，0，1）
+     - tf-idf (0.7, 0.4, 0, 0, 0.4)
+     - 词向量word2vec  (0.01,0.003,...)
+     - seq2seq  (0.01,0.003,...)
+  3. 计算相似度
+     - 计算欧式距离
+     - cosing -distance
+     - ……
+  4. 根据相似度进行排序
+  5. 再过滤
+  6. 返回结果

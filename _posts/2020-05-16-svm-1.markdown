@@ -1,0 +1,24 @@
+---
+layout:     post
+title:      "svm 介绍"
+subtitle:   " \"SVM 系列学习（一）\""
+date:       2020-05-16 20：15
+author:     "Jack-C"
+header-img: "img/post-bg-DL.jpg"
+catalog: true
+tags:
+    - DL
+    - ML
+    - SVM
+---
+
+## 1、SVM基本概念介绍
+
+1. SVM : Support Vector Machine
+2. SVM有三宝：间隔、对偶、核技巧
+3. SVM分类：
+   - hard margin svm
+   -  soft margin svm
+   -  kernel svm
+4. 支持向量：距离超平面**最近的点**
+5. 核心思想：找到一个最好决策边界（最大间隔超平面）
