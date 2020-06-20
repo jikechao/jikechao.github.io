@@ -29,3 +29,17 @@ tags:
 1. mkdir workplace 
 2. chmod -R 764 workplace
 3. chown gp1:sqc workplace
+
+
+
+## 4、查看信息
+
+- group  # 查看当前用户所属的组
+- group sqc # 查看指定用户sqc的所属组
+
+
+
+## 5、删除用户(组)
+
+- userdel sqc
+- groupdel gp1 
