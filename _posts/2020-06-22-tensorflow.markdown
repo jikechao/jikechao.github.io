@@ -50,3 +50,13 @@ tags:
 - tensorflow  + cuda + cudnn 版本必须一致。<a href= 'https://tensorflow.google.cn/install/source'>看这里</a>
 - Tensorflow 2 和Tensorflow不兼容，建议下载到不同的环境中（使用conda创建）。
 
+
+
+## 3、使用Tensorflow2 运行tf
+
+```python
+import tensorflow.compat.v1 as tf
+```
+
+
+

@@ -1,0 +1,65 @@
+---
+layout:     post
+title:      "Image & ndarray"
+subtitle:   " \"图片与数组的转化\""
+date:       2020-06-27 09：23
+author:     "Jack-C"
+header-img: "img/post-bg-DL.jpg"
+catalog: true
+tags:
+    - DL
+    - python
+    - 运维
+    - 数据处理
+---
+
+## 0、需要的包包
+
+```python
+from PIL import Image
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+
+
+## 1、加载并显示图片
+
+```python
+pic = Image.open('test.jpg')
+# resize([长， 宽])图片剪裁， ANTILIAS：保留图片所有信息
+pic = pic.resize([224, 224], Image.ANTIALIAS)  
+plt.imshow(pic)
+plt.show()
+```
+
+## 2、Image格式转化为ndarray格式
+
+```python
+pic = np.array(pic) 
+print(pic.shape)  # 查看图片shape（长，宽，通道数）如：(224, 224, 3)
+```
+
+## 3、ndarray转为Image
+
+```python
+pic = Image.fromarray(pic.astype('uint8')).convert('RGB')
+pic = pic.resize([224, 224], Image.ANTIALIAS)
+```
+
+
+
+## 4、 从npz加载图片
+
+```python
+dataset_dir =  "F:/keyan/DLC/dataset/alexnet-cifar10"
+data_path = os.path.join(dataset_dir,"imagenet-val-1500.npz")
+data = np.load(data_path)
+x, y = data['x_test'], data['y_test']
+```
+
+## 5、注意事项
+
+- 只有将图片转为Image格式，才可以resize、rotate、等对图片进行操作
+
+- 图片为ndarray格式时，可以查看图片shape
