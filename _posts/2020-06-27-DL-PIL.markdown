@@ -36,7 +36,7 @@ plt.show()
 ## 2、Image格式转化为ndarray格式
 
 ```python
-pic = np.array(pic) 
+pic = np.array(pic)  #注意：np.array()【深拷贝】<----> np.asarray()【浅拷贝】
 print(pic.shape)  # 查看图片shape（长，宽，通道数）如：(224, 224, 3)
 ```
 
