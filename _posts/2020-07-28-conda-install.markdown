@@ -39,7 +39,7 @@ ps: 根据需要，选择合适的配置，
 
   - 将.bashrc中的配置复制到/etc/profile下，供全局使用
 
-  -  添加以下信息，关闭bash 中conda一直处于活动状态
+  - 添加以下信息，关闭bash 中conda一直处于活动状态
 
   - ```bash
     conda deactivate
@@ -52,6 +52,7 @@ ps: 根据需要，选择合适的配置，
    ```bash
    conda create -n xxxx python=3.5  # 创建新的env
    conda remove -n xxxx --all   #删除环境
+   pip install -r lemon_requirements.txt  
    ```
 
 2. **选择env**
