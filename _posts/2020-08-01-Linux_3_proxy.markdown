@@ -33,9 +33,7 @@ export https_proxy=http://***.**.**.**:端口号
 
 ## 三、 maven配置代理
 
-- 在setting.xml文件中配置proxy，详见 
-
-[maven]: https://jikechao.github.io/2020/02/15/Linux_2_mvn/	"maven"
+- 在setting.xml文件中配置proxy，详见  <a href=' https://jikechao.github.io/2020/02/15/Linux_2_mvn/'>maven 踩坑</a>
 
 
 
