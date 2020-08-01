@@ -35,7 +35,7 @@ export https_proxy=http://***.**.**.**:端口号
 
 - 在setting.xml文件中配置proxy，详见 
 
-[]: ./2020-02-15-Linux_2_mvn.markdown	"maven踩坑"
+[]: https://jikechao.github.io/2020/02/15/Linux_2_mvn/	"maven踩坑"
 
 
 
@@ -43,4 +43,6 @@ export https_proxy=http://***.**.**.**:端口号
 
 
 
-*注：仅配置http协议，所以git clone git@*****   使用的是git协议，无法使用*
+------
+
+注：仅配置http协议，所以git clone git@*****   使用的是git协议，无法使用*
