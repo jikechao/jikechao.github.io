@@ -39,10 +39,6 @@ export https_proxy=http://***.**.**.**:端口号
 
 
 
-
-
-
-
 ------
 
 注：仅配置http协议，所以git clone git@*****   使用的是git协议，无法使用*
