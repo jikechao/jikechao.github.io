@@ -14,10 +14,14 @@ tags:
 
 ## 1、创建新用户
 
+~~~bash
 1. useradd sqc
 2. passwd sqc
 3. groupadd gp1
 4. usermod -G gp1 sqc
+~~~
+
+
 
 ## 2、加入sudoers
 
@@ -43,3 +47,10 @@ tags:
 
 - userdel sqc
 - groupdel gp1 
+
+### 6、修改当前用户密码
+
+~~~bash
+passwd
+~~~
+
