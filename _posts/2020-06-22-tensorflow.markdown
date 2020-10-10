@@ -34,6 +34,7 @@ tags:
      ```python
      import os
      os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # -1代表cpu,0:第一块GPU，1:第二块GPU...
+     
      import tensorflow as tf
      
      print(tf.__version__)
