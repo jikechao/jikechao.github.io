@@ -83,7 +83,7 @@ $$
 
      ![image-20201112172929284](/../img/DecisionTree/image-20201112172929284.png)
 
-     ![image-20201121140050734](./../img/DecisionTree/image-20201121140050734.png)
+     ![image-20201121140050734](/../img/DecisionTree/image-20201121140050734.png)
 
 ## C4.5算法
 
