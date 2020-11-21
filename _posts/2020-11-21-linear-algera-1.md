@@ -7,7 +7,7 @@ author:     "Jack-C"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
-    - ML
+    - Math
 comments: 1
 typora-root-url: .
 ---
