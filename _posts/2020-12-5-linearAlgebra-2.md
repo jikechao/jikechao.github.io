@@ -1,10 +1,10 @@
 ---
 layout:     post
 title:      "LinearAlgebra 2"
-subtitle:   " \"大白话线性空间\""
+subtitle:   " \"大白话线性空间， 线性空间\""
 date:       2020-12-8 19：26
 author:     "Jack-C"
-header-img: "img/post-bg-linear.jpg"
+header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
     - LinearAlgebra
@@ -45,10 +45,15 @@ ypora-root-url: .
 * ....  满足线性运算
 * 运算结果还是连续函数, 运算封闭
 
-其他的线性空间
+常见的线性空间
+
+* R、C
+* $R^n$
+* $R^{n*n}$
+* C[a,b]
 
 * $l^\infty$: **有界**数列空间:   全体实(复)的**有界**数列的集合.
-* $l^p $:   p方可和数列 :  ${(\xi_1,\xi_2,\xi_3,..)|   \space\space \sum_{i=1}^\infty|\xi_i|^p < +\infty }$
+* $l^2 $:   p方可和数列 :  ${(\xi_1,\xi_2,\xi_3,..)|   \space\space \sum_{i=1}^\infty|\xi_i|^2 < +\infty }$
 
 
 
@@ -127,5 +132,5 @@ $$
 
 ## 总结
 
-![线性算子](D:\blog\jikechao.github.io\img\2020-12-5-linearAlgebra-2\线性算子.jpg)
+![线性空间](D:\blog\jikechao.github.io\img\2020-12-5-linearAlgebra-2\线性空间.jpg)
 

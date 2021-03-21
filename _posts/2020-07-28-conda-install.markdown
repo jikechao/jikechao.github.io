@@ -47,13 +47,13 @@ ps: 根据需要，选择合适的配置，
 
 ## 4. conda常用命令
 
-1.  **创建env**
+1. **创建env**
 
-   ```bash
-   conda create -n xxxx python=3.5  # 创建新的env
-   conda remove -n xxxx --all   #删除环境
-   pip install -r lemon_requirements.txt  
-   ```
+```bash
+conda create -n xxxx python=3.5  # 创建新的env
+conda remove -n xxxx --all   #删除环境
+pip install -r lemon_requirements.txt  
+```
 
 2. **选择env**
 
@@ -63,10 +63,18 @@ conda activate base  # 激活base环境
 conda deactivate   # 关闭当前conda ， 返回到bash
 ```
 
-2.  **安装包**
+3. **安装包**
 
-   ```bash
-   coonda list   # 查看所有安装的包
-   conda install ***
-   conda uninstall ***
-   ```
+```bash
+conda list   # 查看所有安装的包
+conda install ***
+conda uninstall ***
+```
+
+4. 更改虚拟环境的名字
+
+```shell
+conda create -n new_name --clone old_name # 复制一个，并自定义名字
+conda remove -n old_name --all  # 删除老的环境
+```
+

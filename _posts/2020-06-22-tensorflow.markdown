@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "tensorflow环境安装"
+title:      "tensorflow、pytorch环境安装"
 subtitle:   " \"gpu版本环境安装\""
 date:       2020-06-22 19：23
 author:     "Jack-C"
@@ -11,6 +11,8 @@ tags:
     - GPU
     - 运维
 ---
+
+# TensorFlow
 
 ## 1、操作流程
 
@@ -61,3 +63,26 @@ import tensorflow.compat.v1 as tf
 
 
 
+
+
+## 4. Ubuntu 安装cudnn
+
+* 下载地址：https://developer.nvidia.com/rdp/cudnn-download
+
+* 选择对应cuda 的版本，下载的是一个solitairetheme8文件，可以上传到服务器上
+
+* 执行下面步骤
+
+  ```shell
+  cp cudnn-9.0-linux-x64-v7.3.1.20.solitairetheme8 cudnn-9.0-linux-x64-v7.3.1.20.tgz
+  tzr -zxvf cudnn-9.0-linux-x64-v7.3.1.20.tgz
+  sudo cp cuda/include/cudnn.h /usr/local/cuda/include
+  sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
+  sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
+  ```
+
+  
+
+# pytorch
+
+> 对应的方式和与cuda的对应版本详见网址： https://pytorch.org/get-started/previous-versions/
