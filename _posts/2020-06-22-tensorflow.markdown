@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "tensorflow、pytorch环境安装"
+title:      "tensorflow、pytorch等环境安装"
 subtitle:   " \"gpu版本环境安装\""
 date:       2020-06-22 19：23
 author:     "Jack-C"
@@ -13,6 +13,8 @@ tags:
 ---
 
 # TensorFlow
+
+> cuda+cudnn+tensorflow：三者版本要兼容才可！
 
 ## 1、操作流程
 
@@ -86,3 +88,30 @@ import tensorflow.compat.v1 as tf
 # pytorch
 
 > 对应的方式和与cuda的对应版本详见网址： https://pytorch.org/get-started/previous-versions/
+
+
+
+
+
+## Caffe2
+
+> 官方安装方法 ： https://caffe2.ai/docs/getting-started.html?platform=ubuntu&configuration=prebuilt
+
+神奇，竟然安装的是pytorch包。然后就能用caffe2了，这谁能想到！！
+
+
+
+## ONNX
+
+> 好像只要装onnx和onnxruntime两个包就行
+
+```shell
+conda install onnx
+conda install onnxruntime
+```
+
+
+
+## Keras
+
+> keras 只是一个封装好的API，后端还是要安装TensorFlow、等框架，注意要和Keras的版本和TensorFlow要匹配！

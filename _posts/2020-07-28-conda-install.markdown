@@ -71,7 +71,7 @@ conda install ***
 conda uninstall ***
 ```
 
-4. 更改虚拟环境的名字
+4. **更改虚拟环境的名字**
 
 ```shell
 conda create -n new_name --clone old_name # 复制一个，并自定义名字
