@@ -118,3 +118,22 @@ git pull origin 远程分支：本地分支
 git reset --hard   # 回退本地代码到上次commit的内容
 ~~~
 
+
+
+### 8、可以clone但无法push
+
+问题描述：
+
+> error: Cannot access URL https://github.com/jikechao/foolbox.git/, return code 22
+> fatal: git-http-push failed
+> error: failed to push some refs to 'https://github.com/jikechao/foolbox.git'
+
+解决方案：
+
+add the config in thefile  **~/.gitconfig**
+
+```bash
+[http]
+       receivepack = true
+```
+
