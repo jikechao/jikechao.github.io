@@ -10,6 +10,7 @@ tags:
     - DL
     - GPU
     - 运维
+typora-root-url: .
 ---
 
 # TensorFlow
@@ -29,7 +30,7 @@ tags:
 
    - 添加cuda到环境变量
 
-     ![1592824652459](../_post_assets/1592824652459.png)
+     ![1592824652459](/../_post_assets/1592824652459.png)
 
    - nvcc -V # 验证环境配置
 
@@ -115,3 +116,24 @@ conda install onnxruntime
 ## Keras
 
 > keras 只是一个封装好的API，后端还是要安装TensorFlow、等框架，注意要和Keras的版本和TensorFlow要匹配！
+
+
+
+
+
+----
+
+# 源码安装TensorFlow
+
+> 由于需要使用Gcov/Lcov 收集TensorFlow的关于C的coverage，所以需要编译安装TF
+
+参考文献： [官网安装操作]([从源代码构建  | TensorFlow (google.cn)](https://tensorflow.google.cn/install/source?hl=zh-cn)) 、[从源代码编译安装tensorflow_JohnJim的博客-CSDN博客](https://blog.csdn.net/JohnJim0/article/details/103036106)
+
+
+
+
+
+## 特别注意：
+
+![image-20210531211226646](/../img/2020-06-22-tensorflow/image-20210531211226646.png)
+
