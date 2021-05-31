@@ -26,16 +26,17 @@ typora-root-url: .
 3. 安装cuda  ToolKit  + cudnn
 
    - 查看需要安装的CUDA+cuDNN版本（与tf一致），下载
-   - 将cudnn压缩包中文件，放到CUDA文件的根目录下
-
-   - 添加cuda到环境变量
-
-     ![1592824652459](/../_post_assets/1592824652459.png)
-
-   - nvcc -V # 验证环境配置
-
-   - 测试：
-
+   
+- 将cudnn压缩包中文件，放到CUDA文件的根目录下
+   
+- 添加cuda到环境变量
+   
+- ![image-20210531211552203](/../img/2020-06-22-tensorflow/image-20210531211552203.png)
+   
+- nvcc -V # 验证环境配置
+   
+- 测试：
+   
      ```python
      import os
      os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # -1代表cpu,0:第一块GPU，1:第二块GPU...
