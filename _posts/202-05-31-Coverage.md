@@ -1,0 +1,17 @@
+---
+layout:     post
+title:      "Coverage collection： Gcov/Lcov"
+subtitle:   " \"Gcov/Lcov collect C coverage\""
+date:       2020-11-21 19：26
+author:     "Jack-C"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - Coverage
+    - Testing
+typora-root-url: .
+---
+
+
+
+![image-20210531154516537](/../img/202-05-31-Coverage/image-20210531154516537.png)
