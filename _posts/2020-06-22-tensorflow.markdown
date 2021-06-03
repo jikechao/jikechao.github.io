@@ -28,15 +28,15 @@ typora-root-url: .
    - 查看需要安装的CUDA+cuDNN版本（与tf一致），下载
    
 - 将cudnn压缩包中文件，放到CUDA文件的根目录下
-   
+  
 - 添加cuda到环境变量
-   
+  
 - ![image-20210531211552203](/../img/2020-06-22-tensorflow/image-20210531211552203.png)
-   
+  
 - nvcc -V # 验证环境配置
-   
+  
 - 测试：
-   
+  
      ```python
      import os
      os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # -1代表cpu,0:第一块GPU，1:第二块GPU...
@@ -137,4 +137,12 @@ conda install onnxruntime
 ## 特别注意：
 
 ![image-20210531211226646](/../img/2020-06-22-tensorflow/image-20210531211226646.png)
+
+### 注意点二：
+
+使用的numpy版本不要大于1.19，
+
+ `pip install numpy==1.18.5 ` is recommended.
+
+
 
