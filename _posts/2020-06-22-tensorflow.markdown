@@ -128,7 +128,7 @@ conda install onnxruntime
 
 > 由于需要使用Gcov/Lcov 收集TensorFlow的关于C的coverage，所以需要编译安装TF
 
-参考文献： [官网安装操作]([从源代码构建  | TensorFlow (google.cn)](https://tensorflow.google.cn/install/source?hl=zh-cn)) 、[从源代码编译安装tensorflow_JohnJim的博客-CSDN博客](https://blog.csdn.net/JohnJim0/article/details/103036106)
+参考文献： [官网安装操作]([从源代码构建  | TensorFlow (google.cn)](https://tensorflow.google.cn/install/source?hl=zh-cn)) 、   [从源代码编译安装tensorflow_JohnJim的博客-CSDN博客](https://blog.csdn.net/JohnJim0/article/details/103036106)
 
 
 
@@ -143,6 +143,12 @@ conda install onnxruntime
 使用的numpy版本不要大于1.19，
 
  `pip install numpy==1.18.5 ` is recommended.
+
+
+
+
+
+
 
 
 
