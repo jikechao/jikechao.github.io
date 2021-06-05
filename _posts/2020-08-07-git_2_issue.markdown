@@ -7,8 +7,8 @@ author:     "Jack-C"
 header-img: "img/post-bg-DL.jpg"
 catalog: true
 tags:
-    - issue
-    - GitHub介绍
+    - Issue
+    - Git
 ---
 
 ## 1、创建 issue
