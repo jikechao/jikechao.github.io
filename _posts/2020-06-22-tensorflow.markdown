@@ -150,5 +150,11 @@ conda install onnxruntime
 
 
 
+## 源码安装PyTorch(包含caffe2)
+
+鸣谢：[安装教程](https://www.zdaiot.com/MLFrameworks/Pytorch/Pytorch%E7%BC%96%E8%AF%91/)
+
+
+
 
 
