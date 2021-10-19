@@ -3,7 +3,7 @@ title: Jack-C Blog
 SEOTitle: Jack-C Blog
 header-img: img/home-bg.jpg
 email: qingchaoshen@outlook.com
-description: "关于JAVA设计与开发、软件测试 | Jack-C "
+description: "软件质量保障工作、DL Compiler | Jack-C "
 keyword: "Jack-C, jikeChao,  Jack-C的博客, Jack-C Blog, 博客"
 url: "https://jikechao.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
