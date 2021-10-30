@@ -1,5 +1,5 @@
-#Qingchao Blog
-This is my personal Blog
+# Welcome visit my personla Bolg: https://jikechao.github.io/
 
+----
 ### Thanks
-The project is clone from (https://huangxuan.me). 
+The basic architecture of this blog is clone from (https://huangxuan.me). 
