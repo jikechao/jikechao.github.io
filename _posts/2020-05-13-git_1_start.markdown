@@ -2,7 +2,7 @@
 layout:     post
 title:      "git 配置"
 subtitle:   " \"配置git环境，介绍常用操作\""
-date:       2020-05-13 20：15
+date:       2021-10-30 20：15
 author:     "Jack-C"
 header-img: "img/post-bg-DL.jpg"
 catalog: true
@@ -100,19 +100,13 @@ git pull origin 远程分支：本地分支
 
 ## 6、常见问题
 
-* 问题描述
-
-![1589392530578](C:\Users\sqc\AppData\Roaming\Typora\typora-user-images\1589392530578.png)
-
-* 原因分析：
-
-  答：由于远程仓库被别人修改了，和本地仓库不一致，无法直接push上去
+* 原因描述：由于远程仓库被别人修改了，和本地仓库不一致，无法直接push上去
 
 * 解决方案
 
   答：git pull origin master  # 同步远程仓库到本地，再次运行命令
 
-### 7、放弃本地修改
+###  放弃本地修改
 
 ~~~bash
 git reset --hard   # 回退本地代码到上次commit的内容
@@ -120,7 +114,7 @@ git reset --hard   # 回退本地代码到上次commit的内容
 
 
 
-### 8、可以clone但无法push
+### 可以clone但无法push
 
 问题描述：
 
@@ -135,5 +129,52 @@ add the config in thefile  **~/.gitconfig**
 ```bash
 [http]
        receivepack = true
+```
+
+
+
+
+
+
+
+## 9. ~/.gitconfig最佳配置
+
+```powershell
+
+[user]
+        email = -----
+        name = ----
+[http]
+        proxy = http://172.19.135.130:5000      # 为git命令设置代理服务器，使他能够访问外网
+        receivepack = true
+        sslVerify = false
+        postBuffer = 1048576000
+[https]
+        proxy = https://172.19.135.130:5000
+        receivepack = true
+[url "https://hub.fastgit.org"]
+        insteadOf = https://github.com
+[credential]
+        helper = cache
+```
+
+#### 部分命令的解释
+
+1. 【url "..."】instead of = https://github.com   // 该命令通过走国内的镜像fastgit从来实现告诉上传/下载。
+
+
+
+## 10. 通过TOKEN 而非密码进行登录验证
+
+> 由于某种原因，走第三方访问不能使用密码，而只能使用token，然而token每次push都需要提交。
+
+参考资料： https://blog.csdn.net/weixin_41010198/article/details/119698015
+
+
+
+最佳实践
+
+```powershell
+git remote set-url origin https://TOKEN_ID@hub.fastgit.org/jikechao/jikechao.github.io.git
 ```
 
