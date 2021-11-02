@@ -178,3 +178,15 @@ add the config in thefile  **~/.gitconfig**
 git remote set-url origin https://TOKEN_ID@hub.fastgit.org/jikechao/jikechao.github.io.git
 ```
 
+## 11.修改.gitignore并刷新
+
+```powershell
+git rm -r --cached .   # 删除缓存
+git add .
+git commit -m 'update .gitignore'
+```
+
+
+
+
+
