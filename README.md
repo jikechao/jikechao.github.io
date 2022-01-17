@@ -1,1 +1,1 @@
-# Welcome visit my personal Bolg: https://jikechao.github.io/
+# Welcome to my personal Bolg: https://jikechao.github.io/
