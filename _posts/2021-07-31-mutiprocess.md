@@ -22,7 +22,7 @@ typora-root-url: .
 * 定义进程，传入参数，执行
 
 ```python
-import mutiprocessing as mp 
+import multiprocessing as mp 
 
 def job(name)
 	print(name)
@@ -59,7 +59,7 @@ def job(a)
 	
 if __name__ == '__main__':
     pool = mp.Pool(processes=8)
-    res = pool.map(job,rang(10))
+    res = pool.map(job,range(10))
     
     pool.close()
     pool.join()
@@ -126,7 +126,6 @@ if __name__ == "__main__":
 
     for p in pool:  # wait until all child processes terminates
         p.join()
-
 
     print(results)
 ```
