@@ -109,7 +109,7 @@ git pull origin 远程分支：本地分支
 ###  放弃本地修改
 
 ~~~bash
-git reset --hard id_num# 回退本地代码到上次commit的内容 ; id_num可以通过git reflog查看
+git reset --hard id_num# 回退本地代码到上次commit的内容 ; id_num可以通过git reflog/log查看
 ~~~
 
 
