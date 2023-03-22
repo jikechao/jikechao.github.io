@@ -23,7 +23,7 @@ typora-root-url: .
 
 ### 1. 拉去image并创建容器
 
-```powershell
+```javascript
 docker run --runtime=nvidia -itd --name tvm_latest -v /data/shenqingchao/share_host:/share_container -p 8080:22 tvm:latest /bin/bash
 ```
 
@@ -31,17 +31,18 @@ docker run --runtime=nvidia -itd --name tvm_latest -v /data/shenqingchao/share_h
 
 ### 2.  进入容器，并安装ssh服务
 
-```powershell
+```shell
 docker exec -it tvm_latest /bin/bash
+
 apt install openssh-server 
 
 ```
 
 
 
-### 3. 找到了  /etc/ssh/  目录下的sshd服务配置文件 sshd_config，用Vim编辑器打开
+### 3. 找到 /etc/ssh/  目录下的sshd服务配置文件sshd_config，并打开
 
-```powershell
+```python
 vim /etc/ssh/ssh_config
 
 # 去掉PasswordAuthentication yes前面的#号,保存退出
@@ -65,7 +66,7 @@ passwd root
 
 ### 4. 开启ssh服务
 
-```powershell
+```shell
 /etc/init.d/ssh start
 
 # 当修改ssh/sshd文件，需要重启ssh服务
