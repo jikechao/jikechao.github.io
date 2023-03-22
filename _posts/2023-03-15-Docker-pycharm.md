@@ -42,7 +42,7 @@ apt install openssh-server
 
 ### 3. 找到 /etc/ssh/  目录下的sshd服务配置文件sshd_config，并打开
 
-```python
+```shell
 vim /etc/ssh/ssh_config
 
 # 去掉PasswordAuthentication yes前面的#号,保存退出
@@ -51,7 +51,8 @@ vi /etc/ssh/sshd_config
 
 # 修改以下三条内容，并检测两个截图内容是否正确。
 PasswordAuthentication yes
-Subsystem sftp internal-sftp         # 如果不配置Subsystem sftp internal-sftp。就会导致ssh可以连接上，而sftp连接不上
+# 如果不配置Subsystem sftp internal-sftp。就会导致ssh可以连接上，而sftp连接不上
+Subsystem sftp internal-sftp         
 PermitRootLogin yes
 
 
